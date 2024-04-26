@@ -17,9 +17,11 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func counterButton(_ sender: Any) {
+    @IBAction func counterButton(_ sender: UIButton) {
     }
     
+    @IBAction func toDoButton(_ sender: UIButton) {
+    }
     
 }
 
