@@ -66,7 +66,7 @@
         <scene sceneID="aY6-5d-muJ">
             <objects>
                 <viewController id="bMP-nJ-tg3" customClass="CounterViewController" customModule="SelfIntroduction" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NtS-8G-FKk">
+                    <view key="view" contentMode="scaleToFill" id="NtS-8G-FKk" userLabel="Counter View Countroller">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -106,12 +106,13 @@
                     <navigationItem key="navigationItem" id="3kM-pO-P9J"/>
                     <connections>
                         <outlet property="CounterViewCountroller2" destination="NtS-8G-FKk" id="dgj-Dm-IK8"/>
+                        <outlet property="countLabel" destination="n9p-zl-QPY" id="Gwx-jI-yDK"/>
                         <outlet property="counterLabel" destination="n9p-zl-QPY" id="IRw-jp-4OU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLv-C0-o9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4640" y="-261"/>
+            <point key="canvasLocation" x="4567" y="-274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NKf-9d-z0S">
@@ -158,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZ1-kU-FX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4639" y="421"/>
+            <point key="canvasLocation" x="4566" y="422"/>
         </scene>
     </scenes>
     <resources>

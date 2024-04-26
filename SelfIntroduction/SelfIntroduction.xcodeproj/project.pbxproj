@@ -18,7 +18,7 @@
 		5891BAC22BDA0DB900D93A5B /* SelfIntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891BAC12BDA0DB900D93A5B /* SelfIntroductionTests.swift */; };
 		5891BACC2BDA0DB900D93A5B /* SelfIntroductionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891BACB2BDA0DB900D93A5B /* SelfIntroductionUITests.swift */; };
 		5891BACE2BDA0DB900D93A5B /* SelfIntroductionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891BACD2BDA0DB900D93A5B /* SelfIntroductionUITestsLaunchTests.swift */; };
-		5891BADB2BDA36AD00D93A5B /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891BADA2BDA36AD00D93A5B /* CounterViewController.swift */; };
+		589351D42BDBFC9C004044A2 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589351D32BDBFC9C004044A2 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		5891BAC72BDA0DB900D93A5B /* SelfIntroductionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfIntroductionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5891BACB2BDA0DB900D93A5B /* SelfIntroductionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionUITests.swift; sourceTree = "<group>"; };
 		5891BACD2BDA0DB900D93A5B /* SelfIntroductionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5891BADA2BDA36AD00D93A5B /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		589351D32BDBFC9C004044A2 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,9 @@
 				5891BAAA2BDA0DB700D93A5B /* AppDelegate.swift */,
 				5891BAAC2BDA0DB700D93A5B /* SceneDelegate.swift */,
 				5891BAAE2BDA0DB700D93A5B /* ViewController.swift */,
-				5891BADA2BDA36AD00D93A5B /* CounterViewController.swift */,
 				582120242BDB79B900486A2E /* ToDoViewController.swift */,
 				5891BAB02BDA0DB700D93A5B /* Main.storyboard */,
+				589351D32BDBFC9C004044A2 /* CounterViewController.swift */,
 				5891BAB32BDA0DB800D93A5B /* Assets.xcassets */,
 				5891BAB52BDA0DB800D93A5B /* LaunchScreen.storyboard */,
 				5891BAB82BDA0DB800D93A5B /* Info.plist */,
@@ -268,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5891BAAF2BDA0DB700D93A5B /* ViewController.swift in Sources */,
-				5891BADB2BDA36AD00D93A5B /* CounterViewController.swift in Sources */,
 				5891BAAB2BDA0DB700D93A5B /* AppDelegate.swift in Sources */,
 				582120232BDB727200486A2E /* test.swift in Sources */,
+				589351D42BDBFC9C004044A2 /* CounterViewController.swift in Sources */,
 				582120252BDB79B900486A2E /* ToDoViewController.swift in Sources */,
 				5891BAAD2BDA0DB700D93A5B /* SceneDelegate.swift in Sources */,
 			);

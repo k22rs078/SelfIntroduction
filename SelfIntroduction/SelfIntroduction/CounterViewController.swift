@@ -2,7 +2,7 @@
 //  CounterViewController.swift
 //  SelfIntroduction
 //
-//  Created by yuuto takeuchi on 2024/04/25.
+//  Created by yuuto takeuchi on 2024/04/27.
 //
 
 import UIKit
@@ -12,7 +12,9 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(countLabel.text)
+        if let labelText = countLabel.text {
+            print(labelText)
+        }
     }
     @IBAction func countDownButton(_ sender: Any) {
         count = count - 1
