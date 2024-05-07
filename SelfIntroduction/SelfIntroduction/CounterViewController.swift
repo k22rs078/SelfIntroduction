@@ -33,6 +33,8 @@ class CounterViewController: UIViewController {
     func changeTextColor(){
         if count == 2{
             countLabel.textColor = .green
+        } else {
+            countLabel.textColor = .black
         }
     }
 }
