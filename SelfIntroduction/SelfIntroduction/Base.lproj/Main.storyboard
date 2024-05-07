@@ -9,69 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SelfIntroduction" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-3M-ElD">
-                                <rect key="frame" x="167" y="203" width="59" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86C-RH-xBD">
-                                <rect key="frame" x="144.66666666666666" y="283" width="103.66666666666666" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="カウンター"/>
-                                <connections>
-                                    <action selector="counterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYB-d1-dXP"/>
-                                    <segue destination="bMP-nJ-tg3" kind="show" id="vUc-gj-FW9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-97-v5N">
-                                <rect key="frame" x="166" y="368" width="61" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="toDo"/>
-                                <connections>
-                                    <segue destination="5aL-Z7-QIM" kind="show" id="XgA-H0-BqA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyP-9U-ETU">
-                                <rect key="frame" x="152.66666666666666" y="453" width="88" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="三目並べ"/>
-                                <connections>
-                                    <segue destination="fFO-T7-n0V" kind="show" id="d64-kL-Wxk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="qxc-97-v5N" firstAttribute="top" secondItem="86C-RH-xBD" secondAttribute="bottom" constant="50" id="19e-eJ-TkG"/>
-                            <constraint firstItem="DcF-3M-ElD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ce-ar-SxO"/>
-                            <constraint firstItem="DcF-3M-ElD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="1oY-hE-gEP"/>
-                            <constraint firstItem="qxc-97-v5N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2FO-c0-DLr"/>
-                            <constraint firstItem="HyP-9U-ETU" firstAttribute="top" secondItem="qxc-97-v5N" secondAttribute="bottom" constant="50" id="cFA-yq-iYg"/>
-                            <constraint firstItem="86C-RH-xBD" firstAttribute="top" secondItem="DcF-3M-ElD" secondAttribute="bottom" constant="50" id="di7-f9-WeJ"/>
-                            <constraint firstItem="HyP-9U-ETU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pLT-Qk-xeY"/>
-                            <constraint firstItem="86C-RH-xBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4F-mU-9Tw"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="LBC-aW-g8R"/>
-                    <connections>
-                        <outlet property="helloLabel" destination="DcF-3M-ElD" id="gjK-Pj-gEr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3753.4351145038167" y="3.5211267605633805"/>
-        </scene>
-        <!--To Do View Controller-->
+        <!--todo-->
         <scene sceneID="Ktf-f6-b76">
             <objects>
                 <viewController id="5aL-Z7-QIM" customClass="ToDoViewController" customModule="SelfIntroduction" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6IG-9r-15y">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="todo" id="BzD-p1-Nnd">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="43.666667938232422"/>
@@ -102,6 +40,7 @@
                             <constraint firstItem="UBB-gK-VgQ" firstAttribute="bottom" secondItem="6IG-9r-15y" secondAttribute="bottom" id="zo2-3b-nYn"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="todo" image="square.and.pencil" catalog="system" id="iZu-w7-aFI"/>
                     <navigationItem key="navigationItem" id="yZW-cM-l1R"/>
                     <connections>
                         <outlet property="tableView" destination="6IG-9r-15y" id="JMK-Q9-qqP"/>
@@ -109,9 +48,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qq-Ds-gIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4566" y="444"/>
+            <point key="canvasLocation" x="5492.3664122137407" y="443.66197183098592"/>
         </scene>
-        <!--Tic Tac Toe View Controller-->
+        <!--TicTacToe-->
         <scene sceneID="SS5-HW-T3s">
             <objects>
                 <viewController id="fFO-T7-n0V" customClass="TicTacToeViewController" customModule="SelfIntroduction" customModuleProvider="target" sceneMemberID="viewController">
@@ -120,13 +59,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q1u-6N-Rru">
-                                <rect key="frame" x="19.666666666666657" y="283.66666666666663" width="353.66666666666674" height="353.66666666666663"/>
+                                <rect key="frame" x="19.666666666666657" y="259.33333333333326" width="353.66666666666674" height="353.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hzX-8L-iZw">
-                                        <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="114.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="114.33333333333333"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCI-GB-pHG">
-                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114.33333333333333"/>
                                                 <color key="backgroundColor" red="0.40784313729999999" green="0.60784313729999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -138,7 +77,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB3-dG-gZ4">
-                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="114.66666666666667"/>
+                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="114.33333333333333"/>
                                                 <color key="backgroundColor" red="0.40784313729999999" green="0.60784313729999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -150,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxl-5P-yAs">
-                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="114.66666666666667"/>
+                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="114.33333333333333"/>
                                                 <color key="backgroundColor" red="0.40784313729999999" green="0.60784313729999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -164,10 +103,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GtU-mR-FoD">
-                                        <rect key="frame" x="0.0" y="119.66666666666663" width="353.66666666666669" height="114.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333337" width="353.66666666666669" height="114.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-h7-3FO">
-                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114.33333333333333"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114.66666666666667"/>
                                                 <color key="backgroundColor" red="0.40784313729999999" green="0.60784313729999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -179,7 +118,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-mj-Q5T">
-                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="114.33333333333333"/>
+                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="114.66666666666667"/>
                                                 <color key="backgroundColor" red="0.40784313729999999" green="0.60784313729999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -191,7 +130,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qV-19-olX">
-                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="114.33333333333333"/>
+                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="114.66666666666667"/>
                                                 <color key="backgroundColor" red="0.40784313729999999" green="0.60784313729999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -205,7 +144,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w6b-hl-d7f">
-                                        <rect key="frame" x="0.0" y="238.99999999999991" width="353.66666666666669" height="114.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="238.99999999999997" width="353.66666666666669" height="114.66666666666666"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s28-Bi-ZeL">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114.66666666666667"/>
@@ -276,6 +215,7 @@
                             <constraint firstItem="Q1u-6N-Rru" firstAttribute="centerX" secondItem="2Od-oa-msY" secondAttribute="centerX" id="iyt-TK-YMu"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="TicTacToe" image="circle.grid.3x3" catalog="system" id="dev-oI-Th9"/>
                     <navigationItem key="navigationItem" id="RZf-8x-bJU"/>
                     <connections>
                         <outlet property="a1" destination="OCI-GB-pHG" id="cbm-2N-7ek"/>
@@ -340,7 +280,7 @@
             </objects>
             <point key="canvasLocation" x="4571.7557251908393" y="2057.7464788732395"/>
         </scene>
-        <!--Counter View Controller-->
+        <!--counter-->
         <scene sceneID="aY6-5d-muJ">
             <objects>
                 <viewController id="bMP-nJ-tg3" customClass="CounterViewController" customModule="SelfIntroduction" customModuleProvider="target" sceneMemberID="viewController">
@@ -349,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89Q-FN-4p7">
-                                <rect key="frame" x="75" y="583" width="49" height="35"/>
+                                <rect key="frame" x="75" y="534" width="49" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="minus.square" catalog="system"/>
                                 <connections>
@@ -357,7 +297,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMB-vR-p6R">
-                                <rect key="frame" x="269" y="584" width="49" height="34"/>
+                                <rect key="frame" x="269" y="535" width="49" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus.square" catalog="system"/>
                                 <connections>
@@ -381,6 +321,7 @@
                             <constraint firstItem="Lnf-xr-dNS" firstAttribute="bottom" secondItem="jMB-vR-p6R" secondAttribute="bottom" constant="200" id="v9Q-1L-xTu"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="counter" image="plusminus" catalog="system" id="1bn-AC-IGF"/>
                     <navigationItem key="navigationItem" id="3kM-pO-P9J"/>
                     <connections>
                         <outlet property="countLabel" destination="n9p-zl-QPY" id="Gwx-jI-yDK"/>
@@ -388,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLv-C0-o9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4567" y="-274"/>
+            <point key="canvasLocation" x="5492.3664122137407" y="-274.64788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NKf-9d-z0S">
@@ -401,22 +342,43 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fDp-aW-DHk"/>
+                        <segue destination="fxG-od-CLm" kind="relationship" relationship="rootViewController" id="fDp-aW-DHk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWr-bJ-EMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2826.7175572519081" y="3.5211267605633805"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4ON-EQ-0bo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fxG-od-CLm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="JOm-eO-5Is"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4zc-SB-EGO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bMP-nJ-tg3" kind="relationship" relationship="viewControllers" id="SAE-iy-UjB"/>
+                        <segue destination="5aL-Z7-QIM" kind="relationship" relationship="viewControllers" id="edq-ms-9Y2"/>
+                        <segue destination="fFO-T7-n0V" kind="relationship" relationship="viewControllers" id="N39-Oe-iyl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnl-HB-DeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3750" y="4"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="minus.square" catalog="system" width="32" height="32"/>
-        <image name="plus.square" catalog="system" width="32" height="32"/>
+        <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
+        <image name="minus.square" catalog="system" width="128" height="114"/>
+        <image name="plus.square" catalog="system" width="128" height="114"/>
+        <image name="plusminus" catalog="system" width="114" height="128"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
