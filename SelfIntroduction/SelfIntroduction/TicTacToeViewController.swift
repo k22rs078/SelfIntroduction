@@ -118,7 +118,7 @@ class TicTacToeViewController: UIViewController {
             firstTurn = Turn.Cross
             turnLabel.text = CROSS
         }
-        else if firstTurn == Turn.Nought
+        else if firstTurn == Turn.Cross
         {
             firstTurn = Turn.Nought
             turnLabel.text = NOUGHT
